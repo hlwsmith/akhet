@@ -97,7 +97,11 @@ class URLGenerator(object):
         if qualified or "_app_url" in kw:
             return url.route_url(route_name, self.request, *elements, **kw)
         else:
-            return url.route_path(route_name, self.request, *elements, **kw)
+            try: 
+                return url.route_path(route_name, self.request, *elements, **kw)
+            except ValueError:
+                return url.route_url(route_name, self.request, *elements, **kw)
+                
 
     # sugar for calling url('home')
     __call__ = route
