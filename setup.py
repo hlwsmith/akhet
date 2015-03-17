@@ -18,7 +18,7 @@ entry_points = """
 """
 
 setup(name="Akhet",
-      version="2.0+edgy1",
+      version="2.0edgy2",
       description="A Pyramid library and demo app with a Pylons-inspired API.",
       long_description=README,
       #long_description=README + "\n\n" +  CHANGES,
