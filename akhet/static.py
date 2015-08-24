@@ -32,7 +32,7 @@ def add_static_route(config, package, subdir, cache_max_age=3600,
       platform. 
 
     * ``cache_max_age``: influences the ``Expires`` and ``Max-Age``
-      response headers returned by the view (default is 3600 seconds or five
+      response headers returned by the view (default is 3600 seconds or one hour
       minutes).
 
     * ``**add_route_args``: additional arguments to ``config.add_route``.
