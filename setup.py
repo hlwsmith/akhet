@@ -11,14 +11,14 @@ README = README.split("\n\n", 1)[0] + "\n"
 CHANGES = open(os.path.join(here, "CHANGES.txt")).read()
 
 requires = [
-    "pyramid", 
+    "pyramid==1.5.8", 
     ]
 
 entry_points = """
 """
 
 setup(name="Akhet",
-      version="2.1a1",
+      version="2.1a2",
       description="A Pyramid library and demo app with a Pylons-inspired API.",
       long_description=README,
       #long_description=README + "\n\n" +  CHANGES,
